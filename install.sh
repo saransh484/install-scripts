@@ -35,9 +35,8 @@ sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 echo_red "Updating package lists again..."
 sudo apt-get update
 
-echo_red "adding user to docker group...."
-sudo usermod -aG docker $USER && newgrp docker
-
-
 echo_red "Installing Docker and stuff..."
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
+
+echo_red "adding user to docker group...."
+sudo usermod -aG docker $USER && newgrp docker
