@@ -12,4 +12,5 @@ sudo rm -rf /var/lib/docker
 sudo rm -rf /var/lib/containerd
 
 echo "####### Removed Docker Successfully!! #######"
-
+echo ""
+echo ""
