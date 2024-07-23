@@ -40,3 +40,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 echo_red "adding user to docker group...."
 sudo usermod -aG docker $USER && newgrp docker
+
+echo ""
+echo ""
+echo_red "########### Installed Docker Successfully!! ##########"
