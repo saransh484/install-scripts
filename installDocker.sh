@@ -38,9 +38,9 @@ sudo apt-get update
 echo_red "Installing Docker and stuff..."
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 
-echo_red "adding user to docker group...."
+echo "adding user to docker group...."
 sudo usermod -aG docker $USER && newgrp docker
 
 echo ""
 echo ""
-echo_red "########### Installed Docker Successfully!! ##########"
+echo "########### Installed Docker Successfully!! ##########"
